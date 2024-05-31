@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Properties</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Findaproperty.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="Pictures/landing-page/logo-B-nsg1nP (1).png" alt="Logo" width="120px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="DigitalShortlet.html" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Agent.html">Become an Agent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="" style="color:rgb(13, 148, 136) ;">Find Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bahg.html"><svg style="color:#02888B;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+      </svg> Become a Host/Guest</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="loginas.html"><svg style="color:#02888B;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg> Login</a> 
+                      </li>           
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+        <div class="container">
+            <!-- START -->
+            <div class="Filter">
+        <div class="custom-section">
+            <div class="content">
+                <div class="container-fluid text-center footer">
+                    <div class="row align-items-center">
+                      <div class="col-sm">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="stateDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            State
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="stateDropdown">
+                            <li><a class="dropdown-item" href="#" data-state="Lagos">Lagos</a></li>
+                            <li><a class="dropdown-item" href="#" data-state="Abuja">Abuja</a></li>
+                            <!-- Add more states as needed -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="cityDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            City
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="cityDropdown">
+                            <li><a class="dropdown-item" href="#">Select a state first</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <label for="" style="color: black;">Check-in</label>
+                        <input type="date" class="form-control" id="checkin">
+                      </div>
+                      <div class="col-sm">
+                        <label for="" style="color: black;">Check-out</label>
+                        <input type="date" class="form-control" id="checkout">
+                      </div>
+                      <div class="col-sm">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="accommodationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accommodation
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="accommodationDropdown">
+                            <li><a class="dropdown-item" href="#" data-accommodation="All">All</a></li>
+                            <li><a class="dropdown-item" href="#" data-accommodation="Whole">Whole</a></li>
+                            <li><a class="dropdown-item" href="#" data-accommodation="Shared">Shared</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <input type="number" class="form-control" id="guests" placeholder="Guests">
+                      </div>
+                      <div class="col-sm">
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#filterModal"><i class="bi bi-funnel"></i></button>
+                      </div>
+                      <div class="col-sm">
+                        <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Filter Modal -->
+                  <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="filterModalLabel">Filters</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="rooms" class="form-label">Number of Rooms</label>
+                            <input type="number" class="form-control" id="rooms">
+                          </div>
+                          <div class="mb-3">
+                            <label for="beds" class="form-label">Number of Beds</label>
+                            <input type="number" class="form-control" id="beds">
+                          </div>
+                          <div class="mb-3">
+                            <label for="priceMin" class="form-label">Min Price (₦)</label>
+                            <input type="number" class="form-control" id="priceMin" value="50000" min="50000">
+                          </div>
+                          <div class="mb-3">
+                            <label for="priceMax" class="form-label">Max Price (₦)</label>
+                            <input type="number" class="form-control" id="priceMax" value="2000000" max="2000000">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Basic Amenities</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="wifi">
+                              <label class="form-check-label" for="wifi">Wi-Fi</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="airConditioning">
+                              <label class="form-check-label" for="airConditioning">Air Conditioning</label>
+                            </div>
+                            <!-- Add more amenities as needed -->
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Apply Filters</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                <!-- new modal ends -->
+            </div> 
+
+        </div>
+    </div>     
+
+
+        <!-- 1st Card Start -->
+        
+            <div class="container mt-5 col-card">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card" style="border-radius: 50px;">
+                            <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/1 bedroom aprt/FR (4 of 20).jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/1 bedroom aprt/FR (8 of 20).jpg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/1 bedroom aprt/FR (9 of 20).jpg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/1 bedroom aprt/FR (13 of 20).jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/1 bedroom aprt/FR (14 of 20).jpg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/1 bedroom aprt/FR (16 of 20).jpg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/1 bedroom aprt/FR (19 of 20).jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/1 bedroom aprt/FR (10 of 20).jpg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/1 bedroom aprt/FR (9 of 20).jpg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample4" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/2 bedroom aprt/Kitchen Lobby 1.1 jpeg.jpeg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/2 bedroom aprt/Lounge New.jpeg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/2 bedroom aprt/New room 1.jpeg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample5" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/2 bedroom aprt/IMG_5072.jpeg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/2 bedroom aprt/IMG_5098.jpeg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/2 bedroom aprt/Room 2 New 2.jpeg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample6" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/2 bedroom aprt/New Kitchen.jpeg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/2 bedroom aprt/IMG_5143.jpeg" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/2 bedroom aprt/IMG_5376.jpeg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample7" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3862 (1).png" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3865.png" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3876.png" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample8" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3880.png" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3883.png" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3885.png" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample8" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample8" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="col">
+                        <div class="card">
+                            <div id="carouselExample9" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3845.jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3862 (1).png" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="Pictures/3 bedroom aprt org/IMG_3876.png" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample9" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample9" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <a href="" class="card-body-a"><div class="card-body">
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-title">&#8358;150,000.00 </h5>
+                                <img src="Pictures/3 bedroom aprt org/Vector.png" alt="" class="imglove">
+                                </div>
+                                <div class="card-text">De-Shadow Apartment </div>
+                                <p class="card-text2">Apo Resettlement, Area 1 Extension, Abuja</p>
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <h5 class="card-no"><img src="Pictures/3 bedroom aprt org/Group 20@2x.png" alt=""></h5>
+                                    <h5 class="card-no2"><img src="Pictures/3 bedroom aprt org/Group 34.png" alt=""></h5>
+
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+               <div  class="container"><div class="pagination">
+                    <a href="#" class="page-link" data-page="1">1</a>
+                    <a href="#" class="page-link" data-page="2">2</a>
+                    <a href="#" class="page-link" data-page="3">3</a>
+                    <a href="#" class="page-link" data-page="4">4</a>
+                    <a href="#" class="page-link" data-page="5">5</a>
+                    <a href="#" class="page-link" data-page="10">10</a>
+                    <a href="#" class="page-link" data-page="20">20</a>
+                    <a href="#" class="page-link" data-page="30">30</a>
+                    <a href="#" class="page-link" data-page="next">&raquo;</a>
+                    <a href="#" class="page-link" data-page="last">Last</a>
+                </div>
+            </div> 
+            </div>
+           <!-- CARD -->
+           <!--PAGINATION-->
+           
+           <!--PAGINATION  -->
+         
+    </div>
+    <div class="container-fluid text-center info">
+        <div class="row">
+          <div class="col-sm justify"><h4><a href="">About Company</a></h4>
+               </div>
+          <div class="col-sm justify"><h4>Links</h4>
+            <p><a href="">Become an Agent</a></p>
+            <p><a href="">Become a Digital Shortlenter</a></p>
+            <p><a href="">Blog</a></p>
+            <p><a href="">Terms and Codition</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">FAQ</a></p>
+         </div>
+         <div class="col-sm justify">
+            <h4>Contact Us</h4>
+            <p>1234 Street Name</p>
+            <p>City, State, 56789</p>
+            <p>Email: info@company.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
+          <div class="col-sm justify">
+            <h4>Follow Us</h4>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="col-sm justify">
+            <h4>Download our App</h4>
+            <p><a href="#"><img src="Pictures/landing-page/app store.png" alt="" width="150px"></a></p>
+            <p><a href="#"><img src="Pictures/landing-page/google play.png" alt="" width="150px"></a></p>
+          </div>
+      </div>
+    </div>
+    <div class="container-fluid footel">
+        <div class="footerl"> Copyright 2023. All right reserved</div>
+        
+    </div>
+  
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Digitalshortlet.js"></script>
+    <script src="Findaproperty.js"></script>
+    
+
+</body>
+</html>

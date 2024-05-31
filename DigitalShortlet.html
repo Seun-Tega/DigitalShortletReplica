@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Shortlet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Digitalshortlet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="Pictures/landing-page/logo-B-nsg1nP (1).png" alt="Logo" width="120px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" style="color:rgb(13, 148, 136) ;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Agent.html">Become an Agent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Findaproperty.html">Find Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bahg.html"><svg style="color:#02888B;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+      </svg> Become a Host/Guest</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="loginas.html" target="_blank"><svg style="color:#02888B;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                      </svg> Login</a> 
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+        <div class="container">
+        <div class="custom-section perfect">
+            <div class="content">
+                <h1>Find Your Perfect Vacation Home</h1>
+                <!-- <div class="search-container">
+            
+                    <select>
+                        <option>State</option>
+                        <option>Lagos</option>
+                        <option>Osun</option>
+                    </select>
+                
+                    <select>
+                        <option>City</option>
+                        <option>Ikeja</option>
+                    </select>
+                    <input type="date" placeholder="Check-in">
+                    <input type="date" placeholder="Check-out">
+                    <select>
+                        <option>Accommodation</option>
+                        <option>All</option>
+                    </select>
+                    <select>
+                        <option>Guests</option>
+                        <option>All</option>
+                    </select>
+                    <button class="btn btn-success">Search</button>
+                </div> -->
+                <!-- new modal start -->
+                <div class="container-fluid text-center footer">
+                    <div class="row align-items-center">
+                      <div class="col-sm">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="stateDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            State
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="stateDropdown">
+                            <li><a class="dropdown-item" href="#" data-state="Lagos">Lagos</a></li>
+                            <li><a class="dropdown-item" href="#" data-state="Abuja">Abuja</a></li>
+                            <!-- Add more states as needed -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="cityDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            City
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="cityDropdown">
+                            <li><a class="dropdown-item" href="#">Select a state first</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <label for="" style="color: black;">Check-in</label>
+                        <input type="date" class="form-control" id="checkin">
+                      </div>
+                      <div class="col-sm">
+                        <label for="" style="color: black;">Check-out</label>
+                        <input type="date" class="form-control" id="checkout">
+                      </div>
+                      <div class="col-sm">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="accommodationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accommodation
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="accommodationDropdown">
+                            <li><a class="dropdown-item" href="#" data-accommodation="All">All</a></li>
+                            <li><a class="dropdown-item" href="#" data-accommodation="Whole">Whole</a></li>
+                            <li><a class="dropdown-item" href="#" data-accommodation="Shared">Shared</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm">
+                        <input type="number" class="form-control" id="guests" placeholder="Guests">
+                      </div>
+                      <div class="col-sm">
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#filterModal"><i class="bi bi-funnel"></i></button>
+                      </div>
+                      <div class="col-sm">
+                        <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Filter Modal -->
+                  <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="filterModalLabel">Filters</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="rooms" class="form-label">Number of Rooms</label>
+                            <input type="number" class="form-control" id="rooms">
+                          </div>
+                          <div class="mb-3">
+                            <label for="beds" class="form-label">Number of Beds</label>
+                            <input type="number" class="form-control" id="beds">
+                          </div>
+                          <div class="mb-3">
+                            <label for="priceMin" class="form-label">Min Price (₦)</label>
+                            <input type="number" class="form-control" id="priceMin" value="50000" min="50000">
+                          </div>
+                          <div class="mb-3">
+                            <label for="priceMax" class="form-label">Max Price (₦)</label>
+                            <input type="number" class="form-control" id="priceMax" value="2000000" max="2000000">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Basic Amenities</label>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="wifi">
+                              <label class="form-check-label" for="wifi">Wi-Fi</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="airConditioning">
+                              <label class="form-check-label" for="airConditioning">Air Conditioning</label>
+                            </div>
+                            <!-- Add more amenities as needed -->
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Apply Filters</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                <!-- new modal ends -->
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col-sm">
+                <img src="Pictures/landing-page/home-fxAy5k-n (1).png"  alt="" >
+                <h3>Fill Vacancies and Manage Properties</h3>
+                <p style="font-size: 22px;">Hosting made simple,whether you have one rental or an entire portfolio
+                </p>
+              </div>
+              <div class="col-sm">
+                <img src="Pictures/landing-page/Connected world-amico 1.png" alt="">
+                <h3>Over 30million Visitors</h3>
+                <p style="font-size: 22px;">List your Property for free on platform to help ypu find your perfet rental
+                </p>
+              </div>
+              <div class="col-sm">
+                <img src="Pictures/landing-page/star-tqox7hLW (1).png" alt="">
+                <h3>A brand you can trust</h3>
+                <p style="font-size: 22px;">Landlord  tools built by industry experts and the brand that knows real estate
+                </p>
+              </div>
+            </div>
+          </div>
+                <div>
+                    <img src="Pictures/landing-page/livingHome-Fmp8zNyo.png" alt="" width="100%">
+                </div>
+                <div class="host">
+                    <h2>It's easier than ever to be a Host</h2>
+                    <p style="font-size: 18px;">Save time with our property management tools that help you get what you need -
+                        signed leases rent payment.
+                    </p>
+                </div>
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col" style="text-align: justify;font-size: 20px;"><h2>Post your rental listing for free</h2>
+                      <p>Rental Manager's easy-to-use tools let you list your property where millions of 
+                        renters search each month. Plus, messaging and tenant screening are 
+                        integrated into our listing platform to help you find and screen applicants
+                        quickly.</p>
+                        <br>
+                        <br>
+                        <h3 style="color: #02888B;
+                        ;">Learn More</h3>
+                    </div>
+                      <div class="col-lg-4 post"><img src="Pictures/landing-page/landingLivingRoom-5z5RZH-b (1).png" alt="" width="100%"></div>
+                    </div>
+                  </div>
+                  <div class="overlay">
+                    <div><p>Why you should use Digital Shortlet</p></div>
+                  </div>
+
+                  <div class="newsletter-container">
+                    <div>
+                        <div class="newsletter-heading">Our Newsletter</div>
+                        <form class="newsletter-form">
+
+                            <input type="email" placeholder="Your Email Address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+    </div>
+    <div class="container-fluid text-center info">
+        <div class="row">
+          <div class="col-sm justify"><h4><a href="">About Company</a></h4>
+               </div>
+          <div class="col-sm justify"><h4>Links</h4>
+            <p><a href="">Become an Agent</a></p>
+            <p><a href="">Become a Digital Shortlenter</a></p>
+            <p><a href="">Blog</a></p>
+            <p><a href="">Terms and Codition</a></p>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">FAQ</a></p>
+         </div>
+         <div class="col-sm justify">
+            <h4>Contact Us</h4>
+            <p>1234 Street Name</p>
+            <p>City, State, 56789</p>
+            <p>Email: info@company.com</p>
+            <p>Phone: (123) 456-7890</p>
+          </div>
+          <div class="col-sm justify">
+            <h4>Follow Us</h4>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">LinkedIn</a></p>
+          </div>
+          <div class="col-sm justify">
+            <h4>Download our App</h4>
+            <p><a href="#"><img src="Pictures/landing-page/app store.png" alt="" width="150px"></a></p>
+            <p><a href="#"><img src="Pictures/landing-page/google play.png" alt="" width="150px"></a></p>
+          </div>
+          
+      </div> 
+    </div>
+    <div class="container-fluid footel">
+        <div class="footerl"> Copyright 2023. All right reserved</div>
+        
+    </div>
+  
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Digitalshortlet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+
+</body>
+</html>

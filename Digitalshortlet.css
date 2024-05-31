@@ -1,0 +1,279 @@
+nav {background-color: rgb(255, 255, 255);
+    
+}
+.logo{
+    padding: 10px;
+}
+/* background image css */
+.perfect {
+    min-height: 450px;
+    background-image: url(Pictures/landing-page/landingBg-ufc43syD.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.perfect h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+/* search container */
+/* .search-container {
+    background: white;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 70px;
+}
+.search-container select,
+.search-container input,
+.search-container button {
+    margin: 5px;
+}
+.search-container select{
+    border: 0px solid transparent;
+    background-color: rgba(202, 202, 202, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+} */
+/* search container ends */
+/* end of background image css */
+
+/* new search container */
+.footer {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 90%;
+  }
+  
+  .input-group-text {
+    background-color: #f1f1f1;
+    border: none;
+    
+  }
+  
+  .form-select, .form-control {
+    border-radius: 60px;
+    margin-left: 10px;
+  }
+  
+  .btn-light {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 60px;
+  }
+  
+  .btn-primary {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    border-radius: 0px;
+  }
+  
+  
+/* new search container ends */
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+    color: rgb(82, 82, 82);
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.navbar-nav .nav-link:hover {
+    transform: translateY(-3px);
+}
+body{
+   background-color: rgb(249, 249, 249);
+   
+
+}
+.container{
+    margin-top: 20px;
+}
+.carousel img{
+    height: 50%;
+    width: 100%;
+}
+.carousel-item {
+    height: 450px;
+}
+.ca img {
+    height: 100%; 
+    object-fit: cover; 
+}
+.background h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 10%;
+    
+}
+.carousel-caption h3 {
+    font-size: 1.25rem;
+    font-weight:bold ;
+    background: rgb(13, 148, 136);
+    border-radius: 30px;
+    display: inline-block;
+    padding:10px 20px;
+    
+   
+}
+.navbar-brand:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.navbar-brand:hover {
+    transform: translateY(-3px);
+}
+.navbar-brand::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px; 
+    left: 0;
+    background-color: green;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+.col{
+margin-top: 30px;
+}
+.host{
+    text-align: center;
+    color: #282828;
+    margin: 12%;
+}
+.post{
+    margin-bottom: 10%;
+    
+}
+.overlay{
+    min-height: 320px;
+    background-image: -webkit-linear-gradient(270deg,rgba(20, 159, 159, .9), rgba(15, 126, 129, .9), rgba(12, 105, 111, .9), rgba(10, 94, 101, .9), rgba(7, 77, 87, 1)), url("Pictures/landing-page/landingImg3-zSTwTF01.jpeg");
+    background-image: linear-gradient(180deg,rgba(20, 159, 159, .9), rgba(15, 126, 129, .9), rgba(12, 105, 111, .9), rgba(10, 94, 101, .9), rgba(7, 77, 87, 1)), url("Pictures/landing-page/landingImg3-zSTwTF01.jpeg");
+    /* background-image: linear-gradient(180deg,rgba(20, 159, 159, .7),rgba(20, 159, 159, .7)), url("Pictures/landing-page/landingImg3-zSTwTF01.jpeg"); */
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+       
+}
+.overlay p{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    font-family: Arial, sans-serif;
+}
+.newsletter-form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.newsletter-form input[type="email"] {
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    flex: 1;
+    border-radius: 25px 0 0 25px;
+
+}
+.newsletter-form button {
+    border: none;
+    background-color: #0d9488;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+}
+.newsletter-form button:hover {
+    background-color: #0a7d70;
+}
+.newsletter-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: rgb(43, 41, 41);
+}
+.info{
+    background-color: rgba(231, 240, 255, 1);
+    padding: 30px;
+    text-align: justify;
+    color: rgb(38, 37, 37);
+}
+.col-sm a{
+    color: black;
+    text-decoration: none;
+    
+}
+.justify{
+    text-align: justify;
+
+}
+.footel{
+    background-color: rgba(2, 136, 139, 1);
+    width: 100%;
+}
+.footerl{
+    text-align: center;
+    padding: 35px;
+    color: whitesmoke;
+    font-weight: bold;
+
+}
+.agent {
+    min-height: 450px;
+    background-image: url(Pictures/landing-page/598dc5e2ec007541d18f34a6ce1e8e9b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Center the background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}

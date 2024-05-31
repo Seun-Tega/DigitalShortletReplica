@@ -1,0 +1,67 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+}
+.are{
+    text-align: center;
+    margin: 15%;
+}
+
+
+h4 {
+    font-size: 2em;
+    margin-bottom: 20px;
+font-family: Poppins;
+font-size: 28px;
+font-weight: 600;
+line-height: 42px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.btn {
+    padding: 15px 90px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: Fixed (313px)px;
+    width: Fixed (313px)px;
+
+}
+
+.guest {
+    background-color: #e0f0ff;
+    color: #008080;
+    
+}
+
+.host {
+    background-color: #e0f0ff;
+    color: #008080;
+}
+
+.btn:hover {
+    background-color: #d0e8ff;
+}
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
