@@ -1,3 +1,16 @@
+
+.content p{
+    width: 1002px;
+height: 81px;
+top: 218px;
+left: 207px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+
+/* new css */
 nav {background-color: rgb(255, 255, 255);
     
 }
@@ -7,7 +20,7 @@ nav {background-color: rgb(255, 255, 255);
 /* background image css */
 .perfect {
     min-height: 450px;
-    background-image: url(Pictures/landing-page/landingBg-ufc43syD.png);
+    background-image: url(/Digitalshortlet/Pictures/landing-page/landingBg-ufc43syD.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; /* Center the background image */
@@ -55,36 +68,7 @@ nav {background-color: rgb(255, 255, 255);
     width: 90%;
   }
   
-  .input-group-text {
-    background-color: #f1f1f1;
-    border: none;
-    
-  }
-  
-  .form-select, .form-control {
-    border-radius: 60px;
-    margin-left: 10px;
-  }
-  
-  .btn-light {
-    background-color: #f1f1f1;
-    border: none;
-    border-radius: 60px;
-  }
-  
-  .btn-primary {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    border-radius: 0px;
-  }
+
   
   
 /* new search container ends */
@@ -124,33 +108,7 @@ body{
 .container{
     margin-top: 20px;
 }
-.carousel img{
-    height: 50%;
-    width: 100%;
-}
-.carousel-item {
-    height: 450px;
-}
-.ca img {
-    height: 100%; 
-    object-fit: cover; 
-}
-.background h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 10%;
-    
-}
-.carousel-caption h3 {
-    font-size: 1.25rem;
-    font-weight:bold ;
-    background: rgb(13, 148, 136);
-    border-radius: 30px;
-    display: inline-block;
-    padding:10px 20px;
-    
-   
-}
+
 .navbar-brand:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -184,12 +142,7 @@ margin-top: 30px;
 }
 .overlay{
     min-height: 320px;
-    background-image: -webkit-linear-gradient(270deg,rgba(20, 159, 159, .9), rgba(15, 126, 129, .9), rgba(12, 105, 111, .9), rgba(10, 94, 101, .9), rgba(7, 77, 87, 1)), url("Pictures/landing-page/landingImg3-zSTwTF01.jpeg");
-    background-image: linear-gradient(180deg,rgba(20, 159, 159, .9), rgba(15, 126, 129, .9), rgba(12, 105, 111, .9), rgba(10, 94, 101, .9), rgba(7, 77, 87, 1)), url("Pictures/landing-page/landingImg3-zSTwTF01.jpeg");
-    /* background-image: linear-gradient(180deg,rgba(20, 159, 159, .7),rgba(20, 159, 159, .7)), url("Pictures/landing-page/landingImg3-zSTwTF01.jpeg"); */
-    background-position: 0px 0px, 50% 50%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
+    
        
 }
 .overlay p{
@@ -266,7 +219,7 @@ margin-top: 30px;
 }
 .agent {
     min-height: 450px;
-    background-image: url(Pictures/landing-page/598dc5e2ec007541d18f34a6ce1e8e9b.jpg);
+    background-image: url('../Pictures/landing-page/598dc5e2ec007541d18f34a6ce1e8e9b.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; /* Center the background image */
@@ -276,4 +229,11 @@ margin-top: 30px;
     text-align: center;
     color: white;
     position: relative;
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../Pictures/landing-page/598dc5e2ec007541d18f34a6ce1e8e9b.jpg');
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../Pictures/landing-page/598dc5e2ec007541d18f34a6ce1e8e9b.jpg');
+    /* background-image: linear-gradient(180deg,rgba(20, 159, 159, .7),rgba(20, 159, 159, .7)), url("Pictures/landing-page/landingImg3-zSTwTF01.jpeg"); */
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
 }
+/* new css */
