@@ -4,48 +4,47 @@ nav {background-color: rgb(255, 255, 255);
 .logo{
     padding: 10px;
 }
-/* background image css */
-.perfect {
-    min-height: 450px;
-    background-image: url('../Pictures/landing-page/landingBg-ufc43syD.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; /* Center the background image */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
 
+.carousel-item .d-block{
+    height: 500px;
+    width: 100%;
+    object-fit: cover; 
+  }
+.carousel-item {
+    height: 500px;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .carousel-caption h2 {
+    font-size: 3.0rem;
+    font-weight: bold;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption .btn {
+    background-color: #14a98b; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .carousel-caption .btn:hover {
+    background-color: #16a085; /* Button hover color */
+  }
 .perfect h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
-/* search container */
-/* .search-container {
-    background: white;
-    padding: 15px;
-    border-radius: 50px;
-    display: inline-block;
-    margin-top: 70px;
-}
-.search-container select,
-.search-container input,
-.search-container button {
-    margin: 5px;
-}
-.search-container select{
-    border: 0px solid transparent;
-    background-color: rgba(202, 202, 202, 0.5);
-    border-radius: 10px;
-    padding: 5px;
-} */
-/* search container ends */
-/* end of background image css */
 
-/* new search container */
 .footer {
     background-color: #fff;
     padding: 15px;
@@ -81,7 +80,13 @@ nav {background-color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
   }
-  
+  .modal1 label{color: black;
+    font-weight: bold;
+text-align: justify;
+  }
+  .form-label{
+    text-align: justify;
+  }
   .modal-content {
     border-radius: 0px;
   }
@@ -121,36 +126,7 @@ body{
    
 
 }
-.container{
-    margin-top: 20px;
-}
-.carousel img{
-    height: 50%;
-    width: 100%;
-}
-.carousel-item {
-    height: 450px;
-}
-.ca img {
-    height: 100%; 
-    object-fit: cover; 
-}
-.background h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 10%;
-    
-}
-.carousel-caption h3 {
-    font-size: 1.25rem;
-    font-weight:bold ;
-    background: rgb(13, 148, 136);
-    border-radius: 30px;
-    display: inline-block;
-    padding:10px 20px;
-    
-   
-}
+
 .navbar-brand:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -277,3 +253,32 @@ margin-top: 30px;
     color: white;
     position: relative;
 }
+
+@media (max-width: 768px) {
+    .carousel-caption h2 {
+      font-size: 2rem; /* Smaller font size for tablets */
+    }
+
+    .carousel-caption p {
+      font-size: 1rem; /* Smaller font size for tablets */
+    }
+
+    .carousel-caption .btn {
+      font-size: 1rem; /* Smaller button size for tablets */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .carousel-caption h2 {
+      font-size: 1.5rem; /* Smaller font size for mobile phones */
+    }
+
+    .carousel-caption p {
+      font-size: 0.9rem; /* Smaller font size for mobile phones */
+    }
+
+    .carousel-caption .btn {
+      font-size: 0.9rem; /* Smaller button size for mobile phones */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+  }
